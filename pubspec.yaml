@@ -15,7 +15,7 @@ dependencies:
   cloud_firestore: ^5.1.0
   firebase_ui_firestore: ^1.6.4
   get_cli: ^1.8.1
-  intl: any
+  intl:
   get: 4.6.6
   flutter: 
     sdk: flutter

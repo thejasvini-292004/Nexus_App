@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class Announcement extends StatelessWidget {
+  final String title, content;
+  final DateTime createdDate;
+  const Announcement({required this.title, required this.content, required this.createdDate});
   @override
   Widget build(BuildContext context) {
     return Card(

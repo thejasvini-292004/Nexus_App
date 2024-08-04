@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_ui_firestore/firebase_ui_firestore.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -43,13 +45,11 @@ class AnnouncementsView extends GetView<AnnouncementsController> {
             ),
           ),
           Expanded(
-            child: ListView.builder(
-              itemCount: 10, // Number of news items
-              itemBuilder: (context, index) {
-                return Announcement();
-              },
-            ),
-          ),
+            child: FirestoreListView(query: FirebaseFirestore.instance.collection('announcements'), itemBuilder: (context, snap){
+              final data = snap.data();
+              return Announcement(title: data['title'],content: data['content'],createdDate: data['createdDate'].toDate(),);
+            }),
+          )
         ],
       ),
     );
