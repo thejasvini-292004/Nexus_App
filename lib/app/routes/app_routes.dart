@@ -10,6 +10,8 @@ abstract class Routes {
   static const EVENT_CALENDER = _Paths.EVENT_CALENDER;
   static const PROFILE = _Paths.PROFILE;
   static const CATEGORIES = _Paths.CATEGORIES;
+  static const CLUB_INFO = _Paths.CLUB_INFO;
+  static const SETTINGS = _Paths.SETTINGS;
 }
 
 abstract class _Paths {
@@ -21,4 +23,6 @@ abstract class _Paths {
   static const EVENT_CALENDER = '/event-calender';
   static const PROFILE = '/profile';
   static const CATEGORIES = '/categories';
+  static const CLUB_INFO = '/club-info';
+  static const SETTINGS = '/settings';
 }

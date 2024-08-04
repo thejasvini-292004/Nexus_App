@@ -3,9 +3,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:my_first_app/app/components/announcement.dart';
+import 'package:my_first_app/app/modules/announcements/views/announcements_view.dart';
 import 'package:my_first_app/app/modules/categories/views/categories_view.dart';
+import 'package:my_first_app/app/modules/club_info/views/club_info_view.dart';
+
 import 'package:my_first_app/app/modules/event_calender/views/event_calender_view.dart';
 import 'package:my_first_app/app/modules/profile/views/profile_view.dart';
+import 'package:my_first_app/app/modules/settings/views/settings_view.dart';
 import 'package:my_first_app/views/event_calender.dart';
 import 'package:my_first_app/views/profile_view.dart';
 import 'package:my_first_app/views/getstarted_page.dart';
@@ -31,7 +35,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: CategoriesView() );
+      home: EventCalenderView() );
   }
 }
 

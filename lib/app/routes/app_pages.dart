@@ -4,6 +4,8 @@ import '../modules/announcements/bindings/announcements_binding.dart';
 import '../modules/announcements/views/announcements_view.dart';
 import '../modules/categories/bindings/categories_binding.dart';
 import '../modules/categories/views/categories_view.dart';
+import '../modules/club_info/bindings/club_info_binding.dart';
+import '../modules/club_info/views/club_info_view.dart';
 import '../modules/event_calender/bindings/event_calender_binding.dart';
 import '../modules/event_calender/views/event_calender_view.dart';
 import '../modules/home/bindings/home_binding.dart';
@@ -14,13 +16,15 @@ import '../modules/phone_login/bindings/phone_login_binding.dart';
 import '../modules/phone_login/views/phone_login_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
+import '../modules/settings/bindings/settings_binding.dart';
+import '../modules/settings/views/settings_view.dart';
 
 part 'app_routes.dart';
 
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.CATEGORIES;
+  static const INITIAL = Routes.EVENT_CALENDER;
 
   static final routes = [
     GetPage(
@@ -57,6 +61,16 @@ class AppPages {
       name: _Paths.CATEGORIES,
       page: () => CategoriesView(),
       binding: CategoriesBinding(),
+    ),
+    GetPage(
+      name: _Paths.CLUB_INFO,
+      page: () => ClubInfoView(),
+      binding: ClubInfoBinding(),
+    ),
+    GetPage(
+      name: _Paths.SETTINGS,
+      page: () => SettingsView(),
+      binding: SettingsBinding(),
     ),
   ];
 }
