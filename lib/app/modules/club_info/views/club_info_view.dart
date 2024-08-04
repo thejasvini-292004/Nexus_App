@@ -64,7 +64,7 @@ class ClubInfoView extends GetView<ClubInfoController> {
               ),
 
             ),
-          ],
+
 
 
       // Add some top padding
