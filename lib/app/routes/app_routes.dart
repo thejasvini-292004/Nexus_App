@@ -12,6 +12,7 @@ abstract class Routes {
   static const CATEGORIES = _Paths.CATEGORIES;
   static const CLUB_INFO = _Paths.CLUB_INFO;
   static const SETTINGS = _Paths.SETTINGS;
+  static const SPLASH = _Paths.SPLASH;
 }
 
 abstract class _Paths {
@@ -25,4 +26,5 @@ abstract class _Paths {
   static const CATEGORIES = '/categories';
   static const CLUB_INFO = '/club-info';
   static const SETTINGS = '/settings';
+  static const SPLASH = '/splash';
 }

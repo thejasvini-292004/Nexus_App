@@ -7,11 +7,11 @@ class EventCalenderController extends GetxController {
 
   var focusedDay = DateTime.now().obs;
   var selectedDay = DateTime.now().obs;
-  List<Map<String, String>> reminders = [
+  RxList<Map<String, String>> reminders = [
     {'date': '2024-03-02', 'reminder': 'Doctor Appointment'},
     {'date': '2024-03-07', 'reminder': 'Project Deadline'},
     {'date': '2024-03-15', 'reminder': 'Friend\'s Birthday'},
-  ];
+  ].obs;
   void updateYear(int year) {
     selectedYear.value = year;
     focusedDay.value = DateTime(year, focusedDay.value.month, focusedDay.value.day);
