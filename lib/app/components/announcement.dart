@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 class Announcement extends StatelessWidget {
   final String title, content;
@@ -17,18 +18,18 @@ class Announcement extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Announcement 1: ',
+                    title,
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 5),
                   Text(
-                    'News ',
+                    content,
                     // maxLines: 2,
                     // overflow: TextOverflow.ellipsis,
                   ),
                   SizedBox(height: 5),
                   Text(
-                    'CLUB NAME',
+                    DateFormat('dd-MM-yyyy hh:mm a').format(createdDate),
                     style: TextStyle(color: Colors.grey),
                   ),
                 ],
